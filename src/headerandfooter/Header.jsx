@@ -23,10 +23,10 @@ const Header = () => {
                   setOpen(false)
                   if (close === true) {
                     document.documentElement.classList.remove('dark')
-                    localStorage.setItem('dark-mode', !close)
+                    localStorage.setItem('dark-mode', true)
                   } else {
                     document.documentElement.classList.add('dark')
-                    localStorage.setItem('dark-mode', !close)
+                    localStorage.setItem('dark-mode', false)
                   }
                 }} >
           <NavLink to='/'>
