@@ -18,13 +18,17 @@ const Header = () => {
   return (
     <>
       <div className='flex justify-between items-center h-20 '>
-        <div   onClick={() => {
-              setClose(true)
-              if (close === true) {
-                document.documentElement.classList.remove('dark')
-                localStorage.setItem('dark-mode', true)
-              }
-            }} >
+        <div     onClick={() => {
+                  setClose(false)
+                  setOpen(false)
+                  if (close === true) {
+                    document.documentElement.classList.remove('dark')
+                    localStorage.setItem('dark-mode', false)
+                  } else {
+                    document.documentElement.classList.add('dark')
+                    localStorage.setItem('dark-mode', false)
+                  }
+                }}>
           <NavLink to='/'>
             <img
               src={close ? logo : logo2}
