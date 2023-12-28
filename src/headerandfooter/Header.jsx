@@ -18,7 +18,10 @@ const Header = () => {
   return (
     <>
       <div className='flex justify-between items-center h-20 '>
-        <div onClick={()=>setClose(!close)}>
+        <div onClick={()=>{
+      setClose(false);
+      setOpen(false);
+           }}>
           <NavLink to='/'>
             <img
               src={close ? logo : logo2}
