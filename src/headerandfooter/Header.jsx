@@ -21,12 +21,9 @@ const Header = () => {
         <div   onClick={() => {
                   setClose(false)
                   setOpen(false)
-                  if (close === true) {
-                    document.documentElement.classList.remove('dark')
-                    localStorage.setItem('dark-mode', true)
-                  } else {
+                  if (close === false) {
                     document.documentElement.classList.add('dark')
-                    localStorage.setItem('dark-mode', false)
+                    localStorage.setItem('dark-mode', true)
                   }
                 }} >
           <NavLink to='/'>
