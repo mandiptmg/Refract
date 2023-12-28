@@ -19,8 +19,7 @@ const Header = () => {
     <>
       <div className='flex justify-between items-center h-20 '>
         <div   onClick={() => {
-              setOpen(false)
-              setClose(false)
+              setClose(true)
               if (close === true) {
                 document.documentElement.classList.remove('dark')
                 localStorage.setItem('dark-mode', !close)
