@@ -23,7 +23,7 @@ const Header = () => {
                   setOpen(false)
                   if (close === false) {
                     document.documentElement.classList.add('dark')
-                    localStorage.setItem('dark-mode', true)
+                    localStorage.setItem('dark-mode', false)
                   }
                 }} >
           <NavLink to='/'>
